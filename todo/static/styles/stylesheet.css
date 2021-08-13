@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #34495e;
+    margin-top: 35%;
+    margin-left: 12px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #34495e;
+    width: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    text-align: center;
+    color: darkgrey;
+    border: 2px solid darkgrey;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+nav ul {
+    list-style: square;
+    margin-left: 0%;
+    position: relative;
+    left: -20px;
+    text-align: left;
+}
+
+.content {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    text-align: center;
+    color: darkgrey;
+    border: 2px solid darkgrey;
+    display: block;
+    margin-bottom: 50%;
+}
+
+.content input[type = "text"],.content input[type = "password"] {
+    border: 0;
+    background-color: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.content input[id = "description"] {
+    border: 0;
+    background-color: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    transition: 0.25s;
+}
+
+.content input[type = "submit"] {
+    border: 0;
+    background-color: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.content input[type = "submit"]:hover {
+    border: 0;
+    background-color: darkgray;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.content ul {
+    border: 0;
+    background-color: #1b4f72 ;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    list-style: none;
+    margin-top: 10%;
+}
+
+.content hr {
+    margin-right: 0%;
+    margin-left: 0%;
+    background-color: #3498db;
+    height: 2px;
+    border: none;
+}
+
+.flash {
+    color: red;
+}

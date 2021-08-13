@@ -1,0 +1,8 @@
+# Entorno virtual de desarrollo en python
+/venv
+
+# __pycache__
+
+/todo/__pycache__
+
+/notes.txt

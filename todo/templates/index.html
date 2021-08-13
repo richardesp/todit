@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block tittle %}Tareas{% endblock %}</h1>
+    {% if g.user %}
+        <a class="action" href="{{ url_for('todo.create') }}">Nueva tarea</a>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for task in tasks %}
+        <li class="task">
+            <div>
+                <h1>
+                    {% if task["completed"] == 1 %}
+                    <strike>{{ task["description"] }}</strike> <!-- Tick de completado -->
+                    {% else %}
+                        {{ task["description"] }}
+                    {% endif %}
+                </h1>
+                <div class="about">{{ task["created_at"].strftime("%Y-%m-%d") }}</div>
+                <a class="action" href="{{ url_for('todo.update', id=task['id']) }}">Editar</a>
+            </div>
+        </li>
+        {% if not loop.last %} <!-- Si no es el ultimo elemento -->
+            <hr>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block tittle %}Editar {{ task['description'] }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label for="description">Descripción</label>
+        <input name="description" id="description" value="{{ request.form['description'] or task['description'] }}" required>
+        <label for="completed">Completado</label>
+        <input type="checkbox" name="completed" id="completed" {% if task['completed'] == 1 %}checked{% endif %}>
+        <input type="submit" value="Guardar">
+    </form>
+    <form action="{{ url_for('todo.delete', id=task['id']) }}" method="post">
+        <input class="danger" type="submit" value="Eliminar" onclick="return confirm('¿Estás seguro de querer eliminar la tarea?')">
+    </form>
+{% endblock %}
