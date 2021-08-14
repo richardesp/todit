@@ -8,7 +8,7 @@ def create_app(): # Funcion para crear varias instancias de la app y hacer testi
     app.config.from_mapping( # Variables de entorno de configuración
         # Cambiar por algo mas complicado con una funcion de hash
         # Variables de entorno para configurar y obtener todas las claves desde las variables de entorno
-        SECRET_KEY = "mikey", # Clave para el cliente (cookie, id unico para saber que usuario es y que datos tiene asociados)
+        SECRET_KEY ="aG45h%&ahjk2$5anm&", # Clave para el cliente (cookie, id unico para saber que usuario es y que datos tiene asociados)
         DATABASE_HOST = os.environ.get("FLASK_DATABASE_HOST"),
         DATABASE_PASSWORD = os.environ.get("FLASK_DATABASE_PASSWORD"),
         DATABASE_USER = os.environ.get("FLASK_DATABASE_USER"),
