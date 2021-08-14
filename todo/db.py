@@ -36,7 +36,7 @@ def initDb():
 
 def initDbCommand():
     initDb()
-    click.echo("Data base inicialized correctly!") # Se imprime en la terminal una vez inicializada la bd
+    click.echo("Data base initialized correctly!") # Se imprime en la terminal una vez inicializada la bd
 
 def initApp(app):
     app.teardown_appcontext(closeDb) # Cada vez que termine la petición cortaré la conexión con la bd
