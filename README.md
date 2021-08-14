@@ -38,6 +38,7 @@ export FLASK_DATABASE_PASSWORD=$PASSWORD
 export FLASK_DATABASE_USER=$USER
 export FLASK_DATABASE_HOST=$HOST
 export FLASK_DATABASE=$DATABASE
+export FLASK_APP=todo
 ```
 Ejecutas el fichero (recuerda asignar previamente permisos de ejecución):
 ```bash
