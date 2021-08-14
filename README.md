@@ -10,5 +10,14 @@ Antes de clonar el repositorio, debes crear el entorno virtual de python:
 ```bash
 python3 -m venv venv
 ```
-
+Una vez creado, debes instalar las siguientes depedencias:
+```bash
+  pip3 install werkzeug
+```
+```bash
+  pip3 install mysql-connector-python
+```
+```bash
+  pip3 install flask
+```
 
